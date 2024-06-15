@@ -13,6 +13,26 @@ function App() {
   const [type,setType] = useState([]);
   const [data,setData] = useState([]);
   const [part,setPart] = useState("all");
+  const[searchText,setSearchText] = useState("");
+
+
+  useEffect(() => {
+    // if (searchText == "") {
+    //   setData([...data]);
+    // }
+    if(searchText != ""){
+      search()
+    }
+  }, [searchText]);
+
+
+  function search() {
+    setData(
+      data.filter((da) => {
+        if (da.name.toLowerCase().includes(searchText.toLowerCase())) return da;
+      })
+    );
+  }
 
   useEffect(()=>{
     console.log(part);
@@ -42,7 +62,7 @@ const options = {
     }
 } 
 
-  get();
+  // get();
 },[])
 
 async function find(){
@@ -74,8 +94,9 @@ async function find(){
   <div id="main">
       <h1>Awesome Exercises You Should Know</h1>
       <div id="search">
-        <input type="text" placeholder='Search Exercises'></input>
-        <button>Search</button>
+        <input type="text" placeholder='Search Exercises' value={searchText} onChange={(e)=>{
+          setSearchText(e.currentTarget.value)
+        }}></input>
       </div>
     <div id="type">
       <exerciseContext.Provider value ={{data,setData}} >

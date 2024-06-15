@@ -3,7 +3,7 @@ import { exerciseContext } from './App';
 
 function All() {
     useEffect(()=>{
-        all();
+        // all();
     },[])
 
  const{setData}=useContext(exerciseContext);
