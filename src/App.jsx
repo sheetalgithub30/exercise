@@ -17,9 +17,6 @@ function App() {
 
 
   useEffect(() => {
-    // if (searchText == "") {
-    //   setData([...data]);
-    // }
     if(searchText != ""){
       search()
     }
@@ -62,7 +59,7 @@ const options = {
     }
 } 
 
-  // get();
+  get();
 },[])
 
 async function find(){

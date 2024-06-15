@@ -20,7 +20,7 @@ const{data,setData}=useContext(exerciseContext);
                         )
                   })}
                </div>
-               <p id="instruction">{arr.name}</p>
+               <p id="name">{arr.name}</p>
                </div>
               )
             })

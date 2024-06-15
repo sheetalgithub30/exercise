@@ -1,19 +1,38 @@
 #main{
     text-align: center;
+    background-color:rgb(242, 186, 112);
+    padding: 2rem;
+}
+
+#main h1{
+    margin: 2rem 1rem;
+    font-size: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 #type{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     overflow-x: scroll;
+    justify-content: space-between;
+    align-items: center;
 }
-#type-inner{
-    border: 1px solid black;
+#main #type-inner{
+    /* border: 1px solid black; */
+    border: none;
+    background-color: rgb(239, 166, 70);
+    box-shadow: 5px 5px 10px rgb(14, 14, 14);
     padding: 1rem;
+    display: flex;
+   flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2rem;
-    text-align: center;
-    width: 8rem; 
+    /* text-align: center; */
+    width: 15rem; 
+    height: 7rem;
+    /* color: rgb(21, 21, 21); */
+    font-size: 1rem;
+    border-radius: 20px;
 }
 
 #exercise{
@@ -21,20 +40,22 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 #exercise-inner{
     /* border: 1px solid black; */
     padding: 1rem;
     margin: 1rem;
-    width: 28rem;
-    /* height: 30rem; */
-    display: flex;
+    width: 26rem;
+    height: 35rem;
+     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+    align-items: center; 
     box-shadow: 3px 3px 10px black;
+    border-radius: 20px;
+    background-color: rgb(215, 168, 107);
 }
 
 #muscles{
@@ -45,7 +66,7 @@
     height: 10rem;
 }
 #muscle{
-    background-color: yellow;
+    background-color:orange;
     width: 7rem;
     text-align: center;
     font-size: 1.3rem;
@@ -54,8 +75,26 @@
      border: 1px solid rgb(90, 90, 88);
      margin: 0.5rem;
  }
- #instruction{
-    font-size: 1.5rem;
-    height: 2.5rem;
+ #name{
+    font-size: 2rem;
+    width: 20rem;
+    /* height: 2.5rem; */
+    font-weight: 600;
     text-transform: capitalize;
+ }
+
+ #main #search input{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+ }
+
+ #dumb{
+    width: 7rem;
+    text-align: center;
+    margin: 0.5rem;
+ }
+
+ #main #type-inner:hover{
+    /* box-shadow: 15px 15px 10px rgb(52, 30, 2); */
+    filter: drop-shadow(3px 3px 10px rgb(251, 144, 6));
  }

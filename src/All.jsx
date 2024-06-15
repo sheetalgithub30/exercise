@@ -3,7 +3,7 @@ import { exerciseContext } from './App';
 
 function All() {
     useEffect(()=>{
-        // all();
+        all();
     },[])
 
  const{setData}=useContext(exerciseContext);
@@ -31,14 +31,12 @@ function All() {
 
 
   return (
-    <div id="all">
     <button id="type-inner" onClick={()=>{
        all();  
        }}>
-        <h1><i class="fa-solid fa-dumbbell"></i></h1>
-        <h1>All</h1>
+        <h2 id="dumb"><i class="fa-solid fa-dumbbell"></i></h2>
+        <h2 id="name">All</h2>
         </button> 
-        </div>
  )
 }
 

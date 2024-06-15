@@ -9,8 +9,8 @@ function Type({name}) {
         setPart(name)
         // find()
        }}>
-        <h1><i class="fa-solid fa-dumbbell"></i></h1>
-        <h1>{name}</h1>
+        <h2 id="dumb"><i class="fa-solid fa-dumbbell"></i></h2>
+        <h2 id="name">{name}</h2>
         </button>
   )
 }
