@@ -28,7 +28,7 @@
     align-items: center;
     margin: 2rem;
     /* text-align: center; */
-    width: 15rem; 
+    width: 10rem; 
     height: 7rem;
     /* color: rgb(21, 21, 21); */
     font-size: 1rem;
@@ -76,7 +76,7 @@
      margin: 0.5rem;
  }
  #name{
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 20rem;
     /* height: 2.5rem; */
     font-weight: 600;
@@ -97,4 +97,8 @@
  #main #type-inner:hover{
     /* box-shadow: 15px 15px 10px rgb(52, 30, 2); */
     filter: drop-shadow(3px 3px 10px rgb(251, 144, 6));
+ }
+ #exer-name{
+    font-size: 2rem;
+    font-weight: 600;
  }
