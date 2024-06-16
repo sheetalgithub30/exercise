@@ -4,7 +4,7 @@ import { exerciseContext } from './App';
 
 function Exercise() {
 
-const{data,setData}=useContext(exerciseContext);
+const{data}=useContext(exerciseContext);
 // console.log(data)
   return (
        <div id ="exercise">

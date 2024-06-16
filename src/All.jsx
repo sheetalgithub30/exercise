@@ -9,7 +9,7 @@ function All() {
  const{setData}=useContext(exerciseContext);
 
   async function all(){
-    const url = 'https://exercisedb.p.rapidapi.com/exercises?limit=20&offset=0';
+    const url = 'https://exercisedb.p.rapidapi.com/exercises?limit=10&offset=0';
     const options = {
         method: 'GET',
         headers: {
@@ -22,7 +22,7 @@ function All() {
         const response = await fetch(url, options);
         const result = await response.json();
         // console.log(result);
-        setData([...result])
+        setData(result)
     } catch (error) {
         console.error(error);
     }

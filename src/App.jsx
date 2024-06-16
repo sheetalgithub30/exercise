@@ -64,7 +64,7 @@ const options = {
 },[])
 
 async function find(){
-  const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${part}?limit=20&offset=0`
+  const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${part}?limit=10&offset=0`
   const options = {
     method: 'GET',
     headers: {
