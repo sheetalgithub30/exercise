@@ -13,8 +13,8 @@ function All() {
     const options = {
         method: 'GET',
         headers: {
-            'x-rapidapi-key': '2f0689f04bmshd16ce51ece689fap141071jsn08047b40367b',
-            'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
+            'x-rapidapi-key': 'd30b549b5cmsh39886e10e7446e6p1ebc4bjsnfc5d815c7e96',
+		'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
         }
     };
     
