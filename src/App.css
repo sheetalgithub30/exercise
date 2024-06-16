@@ -1,7 +1,5 @@
 #main{
-    text-align: center;
-    background-color:rgb(242, 186, 112);
-    padding: 2rem;
+    padding: 6rem;
 }
 
 #main h1{
@@ -20,7 +18,7 @@
     /* border: 1px solid black; */
     border: none;
     background-color: rgb(239, 166, 70);
-    box-shadow: 5px 5px 10px rgb(14, 14, 14);
+    box-shadow: 5px 5px 10px rgb(121, 200, 253);
     padding: 1rem;
     display: flex;
    flex-direction: column;
@@ -44,18 +42,20 @@
 }
 
 #exercise-inner{
-    /* border: 1px solid black; */
-    padding: 1rem;
     margin: 1rem;
-    width: 26rem;
+    width: 23rem;
     height: 35rem;
      display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px rgb(244, 235, 65);
     border-radius: 20px;
-    background-color: rgb(215, 168, 107);
+    background-color: rgb(24, 94, 113);
+    
+}
+#exercise-inner img{
+   border-radius: 20px;
 }
 
 #muscles{

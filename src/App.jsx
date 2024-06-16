@@ -3,6 +3,7 @@ import Type from './Type';
 import './App.css'
 import Exercise from './Exercise';
 import All from './All';
+import Header from './Header';
 
 export const exerciseContext = createContext();
 
@@ -63,7 +64,7 @@ const options = {
 },[])
 
 async function find(){
-  const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${part}?limit=10&offset=0`
+  const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${part}?limit=20&offset=0`
   const options = {
     method: 'GET',
     headers: {
@@ -88,6 +89,8 @@ async function find(){
 
 
   return (
+    <>
+  <Header/>
   <div id="main">
       <h1>Awesome Exercises You Should Know</h1>
       <div id="search">
@@ -117,7 +120,7 @@ async function find(){
         </exerciseContext.Provider>
     </div>
     </div>
-
+    </>
   )
 }
 
